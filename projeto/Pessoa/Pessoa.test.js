@@ -12,20 +12,30 @@ describe('Testar classe Pessoa', () =>{
     })
 
     test('Verificar se está cadastrando pessoa corretamente', () =>{
+        //setup
+        const pessoa1 = new Pessoa()
+        
+        //acao
+        pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')
+    
+        //verificacao
+        expect()
+    })
+
+    test('Verificar se ocorre erro ao cadastrar pessoa já cadastrada', () =>{
+        //setup
+        const pessoa1 = new Pessoa()
+
+
+        //acao
+        pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')
+
+        //verificacao
+        expect(pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')).toBe('CPF já cadastrado')
 
     })
 
-    test('Verificar se ocorre erro ao cadastrar pessoa com nome inválido', () =>{
-
-    })
-
-    test('Verificar se ocorre erro ao cadastrar pessoa com endereco inválido', () =>{
-
-    })
-
-    test('Verificar se ocorre erro ao cadastrar pessoa com contato inválido', () =>{
-
-    })
+    
     
 
 })
