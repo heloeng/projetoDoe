@@ -20,7 +20,7 @@ describe('Testes da classe Doador', () =>{
         expect(doador1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433')).toBe(`Cadastro de Ana realizado com sucesso.`)
     })    
 
-    test('Verificar se esta ocorrendo erro ao tentar cadastrar pessoa que já está cadastrada', () =>{
+    test('Verificar se esta ocorrendo erro ao tentar cadastrar Doador que já está cadastrada', () =>{
         //setup
         const doador1 = new Doador()
 
@@ -30,5 +30,14 @@ describe('Testes da classe Doador', () =>{
         //verificação
         expect(() => doador1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433').toThrow('Pessoa já cadastrada'))
 
+    })
+
+    test('Verificar se está cadastrando item para doação', () =>{
+        //setup
+        const doador1 = new Doador()
+        //ação
+        operacao = doador1.doarItem('Geladeira')
+        //verificação
+        expect(operacao).toEqual('Item cadastrado para doação')
     })
 })
