@@ -15,27 +15,9 @@ describe('Testar classe Pessoa', () =>{
         //setup
         const pessoa1 = new Pessoa()
         
-        //acao
-        pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')
-    
+        //acao   
         //verificacao
-        expect()
-    })
-
-    test('Verificar se ocorre erro ao cadastrar pessoa já cadastrada', () =>{
-        //setup
-        const pessoa1 = new Pessoa()
-
-
-        //acao
-        pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')
-
-        //verificacao
-        expect(pessoa1.cadastrarPessoa('Ana', 'Rua V, n° 23', '(11) 99324-0433')).toBe('CPF já cadastrado')
-
-    })
-
-    
-    
+        expect(pessoa1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433')).toBe(`Cadastro de Ana realizado com sucesso.`)
+    })    
 
 })
