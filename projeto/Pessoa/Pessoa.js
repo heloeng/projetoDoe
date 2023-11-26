@@ -2,15 +2,14 @@ class Pessoa{
     nome;
     contato;
     endereco;
-    static listaFamilia = [];
-    static listaDoador = [];
+    #cpf
+    listaDePessoas = []
 
     constructor(nome, cpf, contato, endereco){
         this.nome = nome;
-        this.cpf = cpf
+        this.#cpf = cpf
         this.contato = contato;
         this.endereco = endereco;
-
     }
 
     getNome(){
@@ -22,7 +21,11 @@ class Pessoa{
     }
 
     getCPF(){
-
+        return this.#cpf;
+    }
+    
+    setCPF(cpf){
+        this.#cpf = cpf
     }
 
     getContato(){
@@ -41,21 +44,30 @@ class Pessoa{
         this.endereco = novoEndereco
     }
 
-    cadastrarPessoa(nome, endereco, contato){
-        if(!(nome instanceof Pessoa)){
+    cadastrarPessoa(nome, cpf, contato, endereco){
+         if(this.verificarSeJaCadastrado(cpf) === true){
+            throw new Error('Pessoa já cadastrada')
+         } else{
             this.setNome(nome);
-            this.setEndereco(endereco);
-            this.setContato(contato);
-            Pessoa.listaDoador.push(Pessoa)
-        }else{
-            console.log('CPF já cadastrado')
+            this.setCPF(cpf);
+            this.setContato(contato)
+            this.setEndereco(endereco)
+            this.listaDePessoas.push({Nome: this.getNome(), 
+            CPF: this.getCPF(), 
+            Contato: this.getContato(),
+            Endereco: this.getEndereco()})
+            return `Cadastro de ${this.getNome()} realizado com sucesso.`
+        }
+    }
+
+    verificarSeJaCadastrado(cpf){
+        for(let i = 0; i < this.listaDePessoas.length; i++){
+            if(cpf === this.listaDePessoas[i].CPF){
+                return true
+            }
         }
     }
 
 }
 
 module.exports = Pessoa
-
-pessoa = new Pessoa('ana', 'teste', 'teste')
-pessoa.cadastrarPessoa('ana', 'teste', 'teste')
-pessoa.cadastrarPessoa('ana', 'teste', 'teste')
