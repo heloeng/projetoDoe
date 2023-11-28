@@ -4,7 +4,7 @@ class Pessoa{
     endereco;
     #cpf
     listaDePessoas = []
-
+    static listaDeFamilia = []
     constructor(nome, cpf, contato, endereco){
         this.nome = nome;
         this.#cpf = cpf
