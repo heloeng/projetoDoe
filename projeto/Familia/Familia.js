@@ -1,20 +1,16 @@
-class  Familia extends Pessoa {
-    ordemDeCadastro;
-    #itemNecessario;
+const Pessoa = require("../Pessoa/Pessoa");
+const Item = require("../Item/Item");
 
-constructor(nome, cpf, contato, endereco, ordemDeCadastro, itemNecessario){
-   super(nome, cpf, contato, endereco); 
-   this.ordemDeCadastro = ordemDeCadastro;
-   this.#itemNecessario =  itemNecessario;
+class Familia extends Pessoa {
+  itensNecessarios = [];
+
+  cadastrarNecessidade(item) {
+    if (!(item instanceof Item)) {
+      throw new Error("Item não cadastrado");
+    }
+    this.itensNecessarios.push(item);
+    return this.itensNecessarios;
   }
-
-
-getItemNecessario(){
-    return this.#itemNecessario
 }
 
-setItemNecessario(novoItem){
-this.#itemNecessario = novoItem
-}
-
-}
+module.exports = Familia;
