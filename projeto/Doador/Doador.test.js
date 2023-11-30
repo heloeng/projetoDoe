@@ -1,43 +1,76 @@
-const Doador = require('../Doador/Doador')
+const Doador = require("../Doador/Doador");
+const Item = require("../Item/Item");
 
-describe('Testes da classe Doador', () =>{
-    test('Verificar se a instancia da classe Doador está sendo criada sem problemas.',
-    () =>{
-        //setup
-        const doador = new Doador()
+describe("Testes da classe Doador", () => {
+  test("Verificar se a instancia da classe Doador está sendo criada sem problemas.", () => {
+    //setup
+    const doador = new Doador();
 
-        //ação
-        //verificação
-        expect(doador instanceof Doador).toBe(true)
-    })
+    //ação
+    //verificação
+    expect(doador instanceof Doador).toBe(true);
+  });
 
-    test('Verificar se está cadastrando doador corretamente', () =>{
-        //setup
-        const doador1 = new Doador()
-        
-        //acao   
-        //verificacao
-        expect(doador1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433')).toBe(`Cadastro de Ana realizado com sucesso.`)
-    })    
+  test("Verificar se o item está sendo cadastrado sem problemas.", () => {
+    //setup
+    const doador = new Doador(
+      "Ana",
+      "765.098.342-00",
+      "(11) 9811-0000",
+      "Rua B"
+    );
+    const item = new Item("Geladeira");
 
-    test('Verificar se esta ocorrendo erro ao tentar cadastrar Doador que já está cadastrada', () =>{
-        //setup
-        const doador1 = new Doador()
+    //ação
+    const operacao = doador.cadastrarItemParaDoacao(item);
 
-        //ação
-        doador1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433')
-        
-        //verificação
-        expect(() => doador1.cadastrarPessoa('Ana', 34534234567, 'Rua V, n° 23', '(11) 99324-0433').toThrow('Pessoa já cadastrada'))
+    //verificação
+    expect(operacao).toEqual([{ nome: "Geladeira" }]);
+  });
 
-    })
+  test("Verificar se o Doador está exibindo lista corretamente.", () => {
+    //setup
+    const doador = new Doador(
+      "Ana",
+      "765.098.342-00",
+      "(11) 9811-0000",
+      "Rua B"
+    );
+    const item1 = new Item("Geladeira");
+    const item2 = new Item("Fogão");
 
-    test('Verificar se está cadastrando item para doação', () =>{
-        //setup
-        const doador1 = new Doador()
-        //ação
-        operacao = doador1.doarItem('Geladeira')
-        //verificação
-        expect(operacao).toEqual('Item cadastrado para doação')
-    })
-})
+    //ação
+    doador.cadastrarItemParaDoacao(item1);
+    doador.cadastrarItemParaDoacao(item2);
+
+    //verificação
+    expect(doador.itensParaDoacao).toEqual([
+      { nome: "Geladeira" },
+      { nome: "Fogão" },
+    ]);
+  });
+
+  test("Verificar se o Doador está exibindo os dados corretamente", () => {
+    //setup
+    const doador = new Doador(
+      "Ana",
+      "765.098.342-00",
+      "(11) 9811-0000",
+      "Rua B"
+    );
+    const item1 = new Item("Geladeira");
+    const item2 = new Item("Fogão");
+
+    //ação
+    doador.cadastrarItemParaDoacao(item1);
+    doador.cadastrarItemParaDoacao(item2);
+
+    //verificação
+    expect(doador).toEqual({
+      nome: "Ana",
+      contato: "(11) 9811-0000",
+      endereco: "Rua B",
+      itensParaDoacao: [{ nome: "Geladeira" }, { nome: "Fogão" }],
+    });
+  });
+});

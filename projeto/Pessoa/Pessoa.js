@@ -1,8 +1,9 @@
-class Pessoa{
-    nome;
-    contato;
-    endereco;
+class Pessoa {
+    nome
+    contato
+    endereco
     #cpf
+<<<<<<< HEAD
     listaDePessoas = []
     static listaDeFamilia = []
     constructor(nome, cpf, contato, endereco){
@@ -10,64 +11,50 @@ class Pessoa{
         this.#cpf = cpf
         this.contato = contato;
         this.endereco = endereco;
+=======
+  
+  
+    constructor(nome, cpf, contato, endereco) {
+      this.nome = nome
+      this.#cpf = cpf
+      this.contato = contato
+      this.endereco = endereco
+>>>>>>> 0357f62c0a0712c6bd13616ac573a3ab2e4ddbd6
     }
-
-    getNome(){
-        return this.nome;
+  
+    getNome() {
+      return this.nome
     }
-
-    setNome(novoNome){
-        this.nome = novoNome;
+  
+    setNome(novoNome) {
+      this.nome = novoNome
     }
-
-    getCPF(){
-        return this.#cpf;
+  
+    getCPF() {
+      return this.#cpf
     }
-    
-    setCPF(cpf){
-        this.#cpf = cpf
+  
+    setCPF(cpf) {
+      this.#cpf = cpf
     }
-
-    getContato(){
-        return this.contato;
+  
+    getContato() {
+      return this.contato
     }
-
-    setContato(novoContato){
-        this.contato = novoContato;
+  
+    setContato(novoContato) {
+      this.contato = novoContato
     }
-
-    getEndereco(){
-        return this.endereco;
+  
+    getEndereco() {
+      return this.endereco
     }
-
-    setEndereco(novoEndereco){
-        this.endereco = novoEndereco
+  
+    setEndereco(novoEndereco) {
+      this.endereco = novoEndereco
     }
-
-    cadastrarPessoa(nome, cpf, contato, endereco){
-         if(this.verificarSeJaCadastrado(cpf) === true){
-            throw new Error('Pessoa já cadastrada')
-         } else{
-            this.setNome(nome);
-            this.setCPF(cpf);
-            this.setContato(contato)
-            this.setEndereco(endereco)
-            this.listaDePessoas.push({Nome: this.getNome(), 
-            CPF: this.getCPF(), 
-            Contato: this.getContato(),
-            Endereco: this.getEndereco()})
-            return `Cadastro de ${this.getNome()} realizado com sucesso.`
-        }
-    }
-
-    verificarSeJaCadastrado(cpf){
-        for(let i = 0; i < this.listaDePessoas.length; i++){
-            if(cpf === this.listaDePessoas[i].CPF){
-                return true
-            }
-        }
-    }
-
-}
-
-module.exports = Pessoa
+  
+  }
+  
+  module.exports = Pessoa
+  

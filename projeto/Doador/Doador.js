@@ -1,14 +1,16 @@
-const Pessoa = require('../Pessoa/Pessoa')
+const Pessoa = require("../Pessoa/Pessoa");
 
-class Doador extends Pessoa{
+class Doador extends Pessoa {
+  itensParaDoacao = [];
 
-    listaDeItens = []
+  constructor(nome, cpf, contato, endereco) {
+    super(nome, cpf, contato, endereco);
+  }
 
-    doarItem(item){
-        this.listaDeItens.push({Item: item, Doador: super.getNome()});
-        return 'Item cadastrado para doação'
-    }
+  cadastrarItemParaDoacao(item) {
+    this.itensParaDoacao.push(item);
+    return this.itensParaDoacao;
+  }
 }
 
-module.exports = Doador
-
+module.exports = Doador;
