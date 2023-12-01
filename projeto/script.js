@@ -1,6 +1,7 @@
 const Doador = require("././Doador/Doador");
 const Familia = require("././Familia/Familia");
 const Item = require("././Item/Item");
+const Doacao = require("./Ong/Doacao");
 const Ong = require("./Ong/Ong");
 
 
@@ -20,7 +21,17 @@ const familia2 = new Familia(
 const item1 = new Item("Geladeira");
 const item2 = new Item("Fogão");
 const item3 = new Item("Microondas");
-const ong = new Ong();
+const doacao = new Doacao();
+
+
+//cadastrar ong
+const ong1 = new Ong('Ong 1', 'Poá');
+const ong2 = new Ong('Ong 2', 'Suzano');
+ ong1.cadastrarOng()
+ ong2.cadastrarOng()
+//listar ongs
+ console.log('Lista de ongs: ', Ong.listaOng);
+
 
 doador.cadastrarItemParaDoacao(item1);
 doador.cadastrarItemParaDoacao(item2);
@@ -30,7 +41,7 @@ familia1.cadastrarNecessidade(item2);
 
 console.log(familia1);
 console.log(doador);
-ong.verificarDoacaoParaFamilia(familia1, doador);
-ong.verificarDoacaoParaFamilia(familia1, doador);
+doacao.verificarDoacaoParaFamilia(familia1, doador);
+doacao.verificarDoacaoParaFamilia(familia1, doador);
 console.log(familia1);
 console.log(doador);

@@ -14,3 +14,4 @@ class Doador extends Pessoa {
 }
 
 module.exports = Doador;
+

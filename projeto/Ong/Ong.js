@@ -1,24 +1,27 @@
 class Ong {
-  verificarDoacaoParaFamilia(familia, doador) {
-    familia.itensNecessarios = familia.itensNecessarios.filter(
-      (itemNecessario) => {
-        const encontradoNaDoacao = doador.itensParaDoacao.find(
-          (itemDoacao) => itemDoacao.nome === itemNecessario.nome
-        );
-        if (encontradoNaDoacao) {
-          console.log(
-            `${doador.nome} doou o item ${itemNecessario.nome} para ${familia.nome}`
-          );
-          doador.itensParaDoacao = doador.itensParaDoacao.filter(
-            (item) => item.nome !== itemNecessario.nome
-          );
-          return false;
-        }
+    nome;
+    cidade;
+    static listaOng = [];
 
-        return true;
-      }
-    );
-  }
+    constructor(nome, cidade) {
+        this.nome = nome;
+        this.cidade = cidade;
+    }
+
+    getNomeOng() {
+        return this.nome
+    }
+
+    setNomeOng(nome) {
+        this.nome = nome;
+    }
+
+    cadastrarOng() {
+        Ong.listaOng.push({ nome: this.nome, cidade: this.cidade }); 
+        return Ong.listaOng;
+    }
+
 }
 
 module.exports = Ong;
+
