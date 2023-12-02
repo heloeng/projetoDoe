@@ -1,7 +1,7 @@
 
 class Doacao {
 
-    verificarDoacaoParaFamilia(familia, doador) {
+    realizarDoacaoParaFamilia(familia, doador) {
       familia.itensNecessarios = familia.itensNecessarios.filter(
         (itemNecessario) => {
           const encontradoNaDoacao = doador.itensParaDoacao.find(

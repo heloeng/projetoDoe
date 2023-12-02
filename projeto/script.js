@@ -41,7 +41,7 @@ familia1.cadastrarNecessidade(item2);
 
 console.log(familia1);
 console.log(doador);
-doacao.verificarDoacaoParaFamilia(familia1, doador);
-doacao.verificarDoacaoParaFamilia(familia1, doador);
+doacao.realizarDoacaoParaFamilia(familia1, doador);
+doacao.realizarDoacaoParaFamilia(familia1, doador);
 console.log(familia1);
 console.log(doador);

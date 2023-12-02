@@ -28,7 +28,7 @@ describe("Testes da classe Ong", () => {
     doador.cadastrarItemParaDoacao(item2);
     familia.cadastrarNecessidade(item1);
     familia.cadastrarNecessidade(item3);
-    doacao.verificarDoacaoParaFamilia(familia, doador);
+    doacao.realizarDoacaoParaFamilia(familia, doador);
 
     //verificação
     expect(familia.itensNecessarios).toEqual([{ nome: "Microondas" }]);
