@@ -1,4 +1,5 @@
 const Pessoa = require("../Pessoa/Pessoa");
+const Item = require('../Item/Item')
 
 class Doador extends Pessoa {
   itensParaDoacao = [];
@@ -8,6 +9,9 @@ class Doador extends Pessoa {
   }
 
   cadastrarItemParaDoacao(item) {
+    if (!(item instanceof Item)) {
+      throw new Error("Item não cadastrado");
+    }
     this.itensParaDoacao.push(item);
     return this.itensParaDoacao;
   }
