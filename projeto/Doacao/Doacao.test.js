@@ -1,7 +1,7 @@
 const Doador = require("../Doador/Doador");
 const Familia = require("../Familia/Familia");
 const Item = require("../Item/Item");
-const Doacao = require("./Doacao");
+const Doacao = require("../Doacao/Doacao");
 
 describe("Testes da classe Ong", () => {
   test("Verificar se está sendo realizada a doação corretamente", () => {
