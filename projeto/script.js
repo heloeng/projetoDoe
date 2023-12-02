@@ -23,14 +23,14 @@ const item3 = new Item("Microondas");
 const doacao = new Doacao();
 
 //cadastrar ong
-const ong1 = new Ong("Ong 1", "Poá");
-const ong2 = new Ong("Ong 2", "Suzano");
+const ong1 = new Ong("Ong1", "Poá");
+const ong2 = new Ong("Ong2", "Suzano");
 ong1.cadastrarOng();
 ong2.cadastrarOng();
 //listar ongs
 console.log("Lista de ongs: ", Ong.listaOng);
-
-Ong.excluirOng('Ong 1');
+//exlcuir ong
+Ong.excluirOng('Ong1');
  console.log('Lista de ongs atualizada: ', Ong.listaOng);
 
 doador.cadastrarItemParaDoacao(item1);
