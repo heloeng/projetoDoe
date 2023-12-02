@@ -30,6 +30,9 @@ ong2.cadastrarOng();
 //listar ongs
 console.log("Lista de ongs: ", Ong.listaOng);
 
+Ong.excluirOng('Ong 1');
+ console.log('Lista de ongs atualizada: ', Ong.listaOng);
+
 doador.cadastrarItemParaDoacao(item1);
 doador.cadastrarItemParaDoacao(item2);
 familia1.cadastrarNecessidade(item1);

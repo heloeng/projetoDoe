@@ -21,6 +21,18 @@ class Ong {
         return Ong.listaOng;
     }
 
+
+    static excluirOng(nomeDaOng) {
+        const index = Ong.listaOng.findIndex(ong => ong.nome === nomeDaOng);
+    
+        if (index !== -1) {
+            Ong.listaOng.splice(index, 1);
+        }
+    
+        return Ong.listaOng;
+    }
+
+
 }
 
 module.exports = Ong;
