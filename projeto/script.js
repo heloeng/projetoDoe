@@ -1,8 +1,11 @@
 const Doador = require("././Doador/Doador");
 const Familia = require("././Familia/Familia");
 const Item = require("././Item/Item");
+const ItemDoado = require("./Item/ItemDoado");
 const Doacao = require("././Doacao/Doacao");
 const Ong = require("./Ong/Ong");
+const ItemSolicitado = require("./Item/ItemSolicitado");
+const ItemParaDoacao = require('./Item/ItemParaDoacao')
 
 const doador = new Doador("Ana", "765.098.342-00", "(11) 9811-0000", "Rua B");
 const familia1 = new Familia(
@@ -22,6 +25,7 @@ const item2 = new Item("Fogão");
 const item3 = new Item("Microondas");
 const doacao = new Doacao();
 
+
 //cadastrar ong
 const ong1 = new Ong("Ong1", "Poá");
 const ong2 = new Ong("Ong2", "Suzano");
@@ -32,6 +36,30 @@ console.log("Lista de ongs: ", Ong.listaOng);
 //exlcuir ong
 Ong.excluirOng('Ong1');
  console.log('Lista de ongs atualizada: ', Ong.listaOng);
+
+
+
+ //itens que foram doados
+ new ItemDoado('geladeira');
+ new ItemDoado('fogão');
+ new ItemDoado('cama');
+
+ //itens que foram solicitados
+ new ItemSolicitado('geladeira');
+ new ItemSolicitado('armário');
+ new ItemSolicitado('sofá');
+
+ //itens disponivel para doação
+ new ItemParaDoacao('cadeira');
+ new ItemParaDoacao('mesa');
+ new ItemParaDoacao('sofá');
+ 
+ console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
+ console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
+ console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
+ console.log('Todos os itens:', Item.listarTodosItens());
+
+
 
 doador.cadastrarItemParaDoacao(item1);
 doador.cadastrarItemParaDoacao(item2);

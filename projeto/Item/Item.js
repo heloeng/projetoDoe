@@ -1,29 +1,35 @@
+
+
 class Item {
   nome;
+  status;
   static listaItens = []
 
-  constructor(nome) {
+
+  constructor(nome, status) {
     this.nome = nome;
+    this.status = status
+    // Item.listaItens.push(this)
   }
 
-  getItem() {
-    return this.nome;
+ 
+  static listarTodosItens() {
+    return Item.listaItens;
   }
 
-  setItem(nome) {
-    this.nome = nome;
+
+  static listarItensPorStatus(tipo) {
+    return Item.listaItens.filter(item => item.status === tipo)
   }
 
-  adicionarNaLista(item){
-    Item.listaItens.push(item)
-  }
 
-  static excluirDaLista(item){
+
+  static excluirDaLista(item) {
     const index = Item.listaItens.indexOf(item)
-    if(index !== -1){
+    if (index !== -1) {
       Item.listaItens.splice(index, 1)
       console.log(`O item "${item}" foi removido da lista.`)
-    } else{
+    } else {
       console.log(`O item "${item}" não está na lista.`)
     }
   }
@@ -32,9 +38,3 @@ class Item {
 module.exports = Item;
 
 
-const item = new Item()
-item.adicionarNaLista("Beliche")
-item.adicionarNaLista("Fogão")
-console.log(Item.listaItens)
-Item.excluirDaLista("Fogão")
-console.log(Item.listaItens)
