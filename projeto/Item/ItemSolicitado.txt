@@ -1,0 +1,44 @@
+
+const Item = require('../Item/Item')
+
+class ItemSolicitado extends Item {
+    #itemSolicitado = true
+    static listaItemSolicitado = [];
+
+    // constructor(nome,) {
+    //     super(nome)
+    //     this.#itemSolicitado = true
+    // }
+
+    getItemSolicitado() {
+        return this.listaItemSolicitado
+    }
+
+    setItemSolicitado(novoNome) {
+        this.nome = novoNome;
+    }
+
+    static adicionarNaListaItemSolicitado(item) {
+      ItemSolicitado.listaItemSolicitado.push(item);
+        return this.listaItemSolicitado;
+    }
+}
+
+module.exports = ItemSolicitado;
+
+// const itemSolicitado = new ItemSolicitado();
+// itemSolicitado.cadastrarItemSolicitado('Item A');
+// itemSolicitado.cadastrarItemSolicitado('Item AA');
+// itemSolicitado.cadastrarItemSolicitado('Item AAA');
+
+// const itemSolicitado1 = new ItemSolicitado();
+// itemSolicitado1.cadastrarItemSolicitado('Item B');
+// itemSolicitado1.cadastrarItemSolicitado('Item BB');
+// itemSolicitado1.cadastrarItemSolicitado('Item BBB');
+
+
+ItemSolicitado.adicionarNaListaItemSolicitado('A')
+ItemSolicitado.adicionarNaListaItemSolicitado('AA')
+ItemSolicitado.adicionarNaListaItemSolicitado('AAA')
+
+console.log('Lista de Item Solicitados', ItemSolicitado.listaItemSolicitado);
