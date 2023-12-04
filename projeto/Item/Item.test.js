@@ -3,30 +3,25 @@ const Item = require("../Item/Item");
 describe("Testes da classe Item", () => {
   test("Verificar se a instancia da classe Item está sendo criada sem problemas.", () => {
     //setup
-    const item = new Item();
+    const item = new Item("Geladeira", "Item Para Doação");
 
     //ação
     //verificação
     expect(item instanceof Item).toBe(true);
   });
 
-  test("Verificar se o item está sendo retornado sem problemas", () => {
+  test("Verificar se a lista esta sendo exibida sem problemas", () => {
     //setup
-    const item = new Item("Geladeira");
-
     //ação
-    operacao = item.getItem();
     //verificação
-    expect(operacao).toBe("Geladeira");
+    expect(Item.listaItens).toEqual([{nome: "Geladeira", status: "Item Para Doação"}]);
   });
 
-  test("Verificar se o item está sendo modificado sem problemas", () => {
+  test("Verificar se o item está sendo excluido sem problemas", () => {
     //setup
-    const item = new Item("Geladeira");
-
     //ação
-    operacao = item.setItem("Lavadora");
+    Item.excluirDaLista(Item.listaItens[0]);
     //verificação
-    expect(item.getItem()).toEqual("Lavadora");
+    expect(Item.listaItens).toEqual([]);
   });
 });

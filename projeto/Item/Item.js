@@ -9,10 +9,9 @@ class Item {
   constructor(nome, status) {
     this.nome = nome;
     this.status = status
-    // Item.listaItens.push(this)
+    Item.listaItens.push(this)
   }
 
- 
   static listarTodosItens() {
     return Item.listaItens;
   }
