@@ -8,8 +8,8 @@ class Doador extends Pessoa {
     if (!(item instanceof Item)) {
       throw new Error("Item não cadastrado");
     }
-    this.itensParaDoacao.push(item);
-    return this.itensParaDoacao;
+    return this.itensParaDoacao.push(item) && Item.listaItens.push(item);
+    
   }
 }
 
