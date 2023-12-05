@@ -17,11 +17,33 @@ describe("Testes da classe Item", () => {
     expect(Item.listaItens).toEqual([]);
   });
 
-  test("Verificar se o item está sendo excluido sem problemas", () => {
+  test("Verificar se a função listarTodosOsItens esta exibindo a lista corretamente", () => {
     //setup
     //ação
-    Item.excluirDaLista(Item.listaItens[0]);
     //verificação
-    expect(Item.listaItens).toEqual([]);
+    expect(Item.listarTodosItens()).toEqual([]);
+  });
+
+  test("Verificar se a listagem por status esta exibindo corretamente", () => {
+    //setup
+    //ação
+    //verificação
+    expect(Item.listarItensPorStatus()).toEqual([]);
+  });
+
+  test("Verificar se o item está sendo excluido sem problemas", () => {
+    //setup
+    item = new Item("Cama")
+    //ação
+    Item.listaItens.push(item)
+    //verificação
+    expect(Item.excluirDaLista(item)).toEqual(`O item "${item}" foi removido da lista.`);
+  });
+
+  test("Verificar se ocorre erro ao tentar excluir um item que não está na lista", () => {
+    //setup
+    //ação
+    //verificação
+    expect(Item.excluirDaLista("Cama")).toEqual(`O item "Cama" não está na lista.`);
   });
 });

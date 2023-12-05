@@ -26,9 +26,9 @@ class Item {
     const index = Item.listaItens.indexOf(item)
     if (index !== -1) {
       Item.listaItens.splice(index, 1)
-      console.log(`O item "${item}" foi removido da lista.`)
+      return `O item "${item}" foi removido da lista.`
     } else {
-      console.log(`O item "${item}" não está na lista.`)
+      return `O item "${item}" não está na lista.`
     }
   }
 }
