@@ -11,6 +11,19 @@ describe("Testar a Classe Familia", () => {
     expect(familia instanceof Familia).toBe(true);
   });
 
+  test("Verificar se ocorre erro ao tentar cadastrar item não existente", () => {
+    //setup
+    const familia = new Familia(
+      "Roberto",
+      "765.345.444-21",
+      "(11) 984532-5555",
+      "Rua W"
+    );
+    //ação
+    //verificação
+    expect(() => familia.cadastrarNecessidade("Cama")).toThrow("Item não cadastrado")
+  })
+
   test("Verificar se o item está sendo cadastrado sem problemas.", () => {
     //setup
     const familia = new Familia(
