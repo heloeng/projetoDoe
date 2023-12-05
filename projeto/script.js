@@ -26,6 +26,8 @@ const item3 = new ItemSolicitado('Mesaa')
 
 const item4 = new ItemParaDoacao("Fogão");
 const item5 = new ItemParaDoacao("Microondas");
+
+
 // const doacao = new Doacao();
 
 
@@ -57,11 +59,6 @@ const item5 = new ItemParaDoacao("Microondas");
 //  new ItemParaDoacao('mesa');
 //  new ItemParaDoacao('sofá');
  
- console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
- console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
- console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
- console.log('Todos os itens:', Item.listarTodosItens());
-
 
 
 doador.cadastrarItemParaDoacao(item4);
@@ -77,3 +74,11 @@ familia1.cadastrarNecessidade(item2);
 // doacao.realizarDoacaoParaFamilia(familia1, doador);
 console.log(familia1);
 console.log(doador);
+
+console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
+console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
+console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
+console.log('Todos os itens:', Item.listarTodosItens());
+
+
+console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
