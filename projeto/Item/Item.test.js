@@ -14,7 +14,7 @@ describe("Testes da classe Item", () => {
     //setup
     //ação
     //verificação
-    expect(Item.listaItens).toEqual([{nome: "Geladeira", status: "Item Para Doação"}]);
+    expect(Item.listaItens).toEqual([{ nome: "Geladeira", status: "Item Para Doação" }]);
   });
 
   test("Verificar se o item está sendo excluido sem problemas", () => {

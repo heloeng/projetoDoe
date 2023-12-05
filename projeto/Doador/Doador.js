@@ -9,7 +9,7 @@ class Doador extends Pessoa {
       throw new Error("Item não cadastrado");
     }
     return this.itensParaDoacao.push(item);
-    
+
   }
 }
 

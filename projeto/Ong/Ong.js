@@ -37,7 +37,7 @@ class Ong {
     }
 
 
- 
+
 }
 
 module.exports = Ong;
