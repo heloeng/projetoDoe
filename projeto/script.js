@@ -27,38 +27,41 @@ const item3 = new ItemSolicitado('Mesaa')
 const item4 = new ItemParaDoacao("Fogão");
 const item5 = new ItemParaDoacao("Microondas");
 
-
+console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
+console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
+console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
+console.log('Todos os itens:', Item.listarTodosItens());
 // const doacao = new Doacao();
 
 
-// //cadastrar ong
+// cadastrar ong
 // const ong1 = new Ong("Ong1", "Poá");
 // const ong2 = new Ong("Ong2", "Suzano");
 // ong1.cadastrarOng();
 // ong2.cadastrarOng();
-// //listar ongs
+// listar ongs
 // console.log("Lista de ongs: ", Ong.listaOng);
-// //exlcuir ong
+// exlcuir ong
 // Ong.excluirOng('Ong1');
-//  console.log('Lista de ongs atualizada: ', Ong.listaOng);
+// console.log('Lista de ongs atualizada: ', Ong.listaOng);
 
 
 
- //itens que foram doados
-//  new ItemDoado('geladeira');
-//  new ItemDoado('fogão');
-//  new ItemDoado('cama');
+// itens que foram doados
+// new ItemDoado('geladeira');
+// new ItemDoado('fogão');
+// new ItemDoado('cama');
 
- //itens que foram solicitados
-//  new ItemSolicitado('geladeira');
-//  new ItemSolicitado('armário');
-//  new ItemSolicitado('sofá');
+// itens que foram solicitados
+// new ItemSolicitado('geladeira');
+// new ItemSolicitado('armário');
+// new ItemSolicitado('sofá');
 
- //itens disponivel para doação
-//  new ItemParaDoacao('cadeira');
-//  new ItemParaDoacao('mesa');
-//  new ItemParaDoacao('sofá');
- 
+// itens disponivel para doação
+// new ItemParaDoacao('cadeira');
+// new ItemParaDoacao('mesa');
+// new ItemParaDoacao('sofá');
+
 
 
 doador.cadastrarItemParaDoacao(item4);
@@ -79,6 +82,3 @@ console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
 console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
 console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
 console.log('Todos os itens:', Item.listarTodosItens());
-
-
-console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
