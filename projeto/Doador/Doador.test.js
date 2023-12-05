@@ -25,7 +25,7 @@ describe("Testes da classe Doador", () => {
     const operacao = doador.cadastrarItemParaDoacao(item);
 
     //verificação
-    expect(operacao).toEqual([{ nome: "Geladeira" }]);
+    expect(doador.itensParaDoacao).toEqual([{ nome: "Geladeira" }]);
   });
 
   test("Verificar se o Doador está exibindo lista corretamente.", () => {

@@ -25,7 +25,7 @@ describe("Testar a Classe Familia", () => {
     operacao = familia.cadastrarNecessidade(item);
 
     //verificação
-    expect(operacao).toEqual([{ nome: "Fogão" }]);
+    expect(familia.itensNecessarios).toEqual([{ nome: "Fogão" }]);
   });
 
   test("Verificar se a familia está exibindo lista corretamente.", () => {
