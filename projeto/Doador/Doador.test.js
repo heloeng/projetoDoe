@@ -11,6 +11,19 @@ describe("Testes da classe Doador", () => {
     expect(doador instanceof Doador).toBe(true);
   });
 
+  test("Verificar se ocorre erro ao tentar cadastrar item não existente", () => {
+    //setup
+    const doador = new Doador(
+      "Ana",
+      "765.098.342-00",
+      "(11) 9811-0000",
+      "Rua B"
+    );
+    //ação
+    //verificação
+    expect(() => doador.cadastrarItemParaDoacao("Cama")).toThrow("Item não cadastrado")
+  })
+
   test("Verificar se o item está sendo cadastrado sem problemas.", () => {
     //setup
     const doador = new Doador(
