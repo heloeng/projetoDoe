@@ -28,4 +28,69 @@ describe("Testes da classe Ong", () => {
 
   });
 
+  test("verificar se o nome da ong está sendo retornado sem problemas.", () =>{
+    //setup
+    const ong = new Ong("Ong 3", "Florianópolis")
+    
+    //acao
+    operacao = ong.getNomeOng()
+
+    //verificação
+    expect(operacao).toBe(ong.nome)
+
+
+  })
+
+  test("verificar se o nome da ong está sendo modificado sem problemas.", () =>{
+    //setup
+    const ong = new Ong("Ong 3", "Florianópolis")
+    
+    //acao
+    operacao = ong.setNomeOng("Ong 1")
+
+    //verificação
+    expect(ong.getNomeOng()).toBe("Ong 1")
+
+  })
+
+  test("verificar se a ong está na lista", () =>{
+    //setup
+    const ong = new Ong("Ong 3", "Florianópolis")
+    
+    //acao
+    //verificação
+    expect(Ong.excluirOng(ong.nome)).toBe(`A ong "Ong 3" não está na lista.`)
+
+  })
+
+  test("Verificar se está sendo realizada a doação corretamente", () => {
+    //setup
+    const doacao = new Ong();
+    const doador = new Doador(
+      "Ana",
+      "765.098.342-00",
+      "(11) 9811-0000",
+      "Rua B"
+    );
+    const familia = new Familia(
+      "Mariana",
+      "874.876.222-01",
+      "(15) 98455-0101",
+      "Rua F"
+    );
+    const item1 = new Item("Geladeira");
+    const item2 = new Item("Fogão");
+    const item3 = new Item("Microondas");
+
+    //ação
+    doador.cadastrarItemParaDoacao(item1);
+    doador.cadastrarItemParaDoacao(item2);
+    familia.cadastrarNecessidade(item1);
+    familia.cadastrarNecessidade(item3);
+    doacao.realizarDoacaoParaFamilia(familia, doador);
+
+    //verificação
+    expect(familia.itensNecessarios).toEqual([{ nome: "Microondas" }]);
+  });
+
 });

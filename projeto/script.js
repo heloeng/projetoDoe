@@ -2,7 +2,6 @@ const Doador = require("././Doador/Doador");
 const Familia = require("././Familia/Familia");
 const Item = require("././Item/Item");
 const ItemDoado = require("./Item/ItemDoado");
-const Doacao = require("././Doacao/Doacao");
 const Ong = require("./Ong/Ong");
 const ItemSolicitado = require("./Item/ItemSolicitado");
 const ItemParaDoacao = require('./Item/ItemParaDoacao')
@@ -27,23 +26,23 @@ const item3 = new ItemSolicitado('Mesaa')
 const item4 = new ItemParaDoacao("Fogão");
 const item5 = new ItemParaDoacao("Microondas");
 
-console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
-console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
-console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
-console.log('Todos os itens:', Item.listarTodosItens());
-// const doacao = new Doacao();
+//console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
+//console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
+//console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
+//console.log('Todos os itens:', Item.listarTodosItens());
+
 
 
 // cadastrar ong
-// const ong1 = new Ong("Ong1", "Poá");
-// const ong2 = new Ong("Ong2", "Suzano");
-// ong1.cadastrarOng();
-// ong2.cadastrarOng();
-// listar ongs
-// console.log("Lista de ongs: ", Ong.listaOng);
+const ong1 = new Ong("Ong1", "Poá");
+const ong2 = new Ong("Ong2", "Suzano");
+ong1.cadastrarOng();
+//ong2.cadastrarOng();
+//listar ongs
+//console.log("Lista de ongs: ", Ong.listaOng);
 // exlcuir ong
-// Ong.excluirOng('Ong1');
-// console.log('Lista de ongs atualizada: ', Ong.listaOng);
+//Ong.excluirOng('Ong1');
+//console.log('Lista de ongs atualizada: ', Ong.listaOng);
 
 
 
@@ -71,14 +70,14 @@ familia1.cadastrarNecessidade(item1);
 familia1.cadastrarNecessidade(item3);
 familia1.cadastrarNecessidade(item2);
 
-// console.log(familia1);
-// console.log(doador);
-// doacao.realizarDoacaoParaFamilia(familia1, doador);
-// doacao.realizarDoacaoParaFamilia(familia1, doador);
+console.log(familia1);
+console.log(doador);
+ong1.realizarDoacaoParaFamilia(familia1, doador);
+ong1.realizarDoacaoParaFamilia(familia1, doador);
 console.log(familia1);
 console.log(doador);
 
-console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
-console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
-console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
-console.log('Todos os itens:', Item.listarTodosItens());
+//console.log('Itens Solicitados:', Item.listarItensPorStatus('Item Solicitado'));
+//console.log('Itens Doados:', Item.listarItensPorStatus('ItemDoado'));
+//console.log('Itens Disponíveis para doação:', Item.listarItensPorStatus('Item Para Doação'));
+//console.log('Todos os itens:', Item.listarTodosItens());
