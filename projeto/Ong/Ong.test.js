@@ -6,62 +6,56 @@ const Item = require("../Item/Item");
 describe("Testes da classe Ong", () => {
   test("Verificar se a ong está sendo instanciada", () => {
     //setup
-    const ong = new Ong()
+    const ong = new Ong();
 
     //ação
     //verificação
-    expect(ong instanceof Ong).toBe(true)
-
+    expect(ong instanceof Ong).toBe(true);
   });
 
   test("Verificar se a ong está sendo excluida da lista sem problemas", () => {
     //setup
-    const ong = new Ong("Ong 1", "Cuiabá")
-
+    const ong = new Ong("Ong 1", "Cuiabá");
 
     //ação
-    operacao = ong.cadastrarOng()
-
+    operacao = ong.cadastrarOng();
 
     //verificação
-    expect(Ong.excluirOng("Ong 1")).toBe(`A ong "Ong 1" foi removida da lista.`)
-
+    expect(Ong.excluirOng("Ong 1")).toBe(
+      `A ong "Ong 1" foi removida da lista.`
+    );
   });
 
-  test("verificar se o nome da ong está sendo retornado sem problemas.", () =>{
+  test("verificar se o nome da ong está sendo retornado sem problemas.", () => {
     //setup
-    const ong = new Ong("Ong 3", "Florianópolis")
-    
+    const ong = new Ong("Ong 3", "Florianópolis");
+
     //acao
-    operacao = ong.getNomeOng()
+    operacao = ong.getNomeOng();
 
     //verificação
-    expect(operacao).toBe(ong.nome)
+    expect(operacao).toBe(ong.nome);
+  });
 
-
-  })
-
-  test("verificar se o nome da ong está sendo modificado sem problemas.", () =>{
+  test("verificar se o nome da ong está sendo modificado sem problemas.", () => {
     //setup
-    const ong = new Ong("Ong 3", "Florianópolis")
-    
+    const ong = new Ong("Ong 3", "Florianópolis");
+
     //acao
-    operacao = ong.setNomeOng("Ong 1")
+    operacao = ong.setNomeOng("Ong 1");
 
     //verificação
-    expect(ong.getNomeOng()).toBe("Ong 1")
+    expect(ong.getNomeOng()).toBe("Ong 1");
+  });
 
-  })
-
-  test("verificar se a ong está na lista", () =>{
+  test("verificar se a ong está na lista", () => {
     //setup
-    const ong = new Ong("Ong 3", "Florianópolis")
-    
+    const ong = new Ong("Ong 3", "Florianópolis");
+
     //acao
     //verificação
-    expect(Ong.excluirOng(ong.nome)).toBe(`A ong "Ong 3" não está na lista.`)
-
-  })
+    expect(Ong.excluirOng(ong.nome)).toBe(`A ong "Ong 3" não está na lista.`);
+  });
 
   test("Verificar se está sendo realizada a doação corretamente", () => {
     //setup
@@ -92,5 +86,4 @@ describe("Testes da classe Ong", () => {
     //verificação
     expect(familia.itensNecessarios).toEqual([{ nome: "Microondas" }]);
   });
-
 });

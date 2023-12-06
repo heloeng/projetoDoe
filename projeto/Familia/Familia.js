@@ -9,7 +9,6 @@ class Familia extends Pessoa {
       throw new Error("Item não cadastrado");
     }
     return this.itensNecessarios.push(item);
-
   }
 }
 

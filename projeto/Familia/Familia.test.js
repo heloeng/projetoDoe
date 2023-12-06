@@ -21,8 +21,10 @@ describe("Testar a Classe Familia", () => {
     );
     //ação
     //verificação
-    expect(() => familia.cadastrarNecessidade("Cama")).toThrow("Item não cadastrado")
-  })
+    expect(() => familia.cadastrarNecessidade("Cama")).toThrow(
+      "Item não cadastrado"
+    );
+  });
 
   test("Verificar se o item está sendo cadastrado sem problemas.", () => {
     //setup

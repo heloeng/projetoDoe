@@ -1,5 +1,5 @@
 const Pessoa = require("../Pessoa/Pessoa");
-const Item = require('../Item/Item')
+const Item = require("../Item/Item");
 
 class Doador extends Pessoa {
   itensParaDoacao = [];
@@ -9,9 +9,7 @@ class Doador extends Pessoa {
       throw new Error("Item não cadastrado");
     }
     return this.itensParaDoacao.push(item);
-
   }
 }
 
 module.exports = Doador;
-

@@ -21,8 +21,10 @@ describe("Testes da classe Doador", () => {
     );
     //ação
     //verificação
-    expect(() => doador.cadastrarItemParaDoacao("Cama")).toThrow("Item não cadastrado")
-  })
+    expect(() => doador.cadastrarItemParaDoacao("Cama")).toThrow(
+      "Item não cadastrado"
+    );
+  });
 
   test("Verificar se o item está sendo cadastrado sem problemas.", () => {
     //setup
