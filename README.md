@@ -12,17 +12,21 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 ### Diagrama UML
 
 
-### Classes
-- Pessoa
-- Doador herda de Pessoa
-- Família herda de Pessoa
-- Item
-- Ong
+
+### Função realizarDoacaoParaFamilia
 
 
+### Exibindo a lista antes e depois de realizada a doação
 
+### Testes unitários
+
+
+### Implementações futuras
+
+- Cadastro de membros nas familias
+- Listagem de todos os itens doados
+- Busca de todos os doadores e familias para verificação de itens disponíveis e familias que estão precisando
 
 
 * Esse projeto foi desenvolvido para o curso de Imersão JavaScrip da {Reprograma}
-* Alunas:
-Heloiza Souza Mendes e Jeanne Fernanda Mendes
+* Alunas: Heloiza Souza Mendes e Jeanne Fernanda Mendes
