@@ -35,13 +35,13 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Função realizarDoacaoParaFamilia
 <h1>
-  <img src="IMG/realizarDOacaoParaFamilia.JPG" alt="Função realizar doação para familia" width="800">
+  <img src="IMG/realizarDOacaoParaFamilia.PNG" alt="Função realizar doação para familia" width="800">
 </h1>
 
 
 ## Exibindo a lista antes e depois de realizada a doação
 <h1>
-  <img src="IMG/doacao.JPG" alt="listas antes e depois da doação" width="800">
+  <img src="IMG/doacao.PNG" alt="listas antes e depois da doação" width="800">
 </h1>
 
 ## Testes unitários
