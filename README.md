@@ -35,7 +35,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Função realizarDoacaoParaFamilia
 <h1>
-  <img src="img/realizarDoacaoParaFamilia.png" alt="Função realizar doação para familia" width="400">
+  <img src="img/realizarDoacaoParaFamilia.png" alt="Função realizar doação para familia" width="600">
 </h1>
 
 
