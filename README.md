@@ -34,14 +34,20 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 - Listar todos itens solicitados pelas famílias
 
 ## Função realizarDoacaoParaFamilia
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<h1>
+  <img src="IMG/realizarDOacaoParaFamilia.JPG" alt="Função realizar doação para familia" width="800">
+</h1>
+
 
 ## Exibindo a lista antes e depois de realizada a doação
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<h1>
+  <img src="IMG/doacao.JPG" alt="listas antes e depois da doação" width="800">
+</h1>
 
 ## Testes unitários
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+<h1>
+  <img src="img/tests.png" alt="lista depois da daoação" width="800">
+</h1>
 
 ## Aprendizados
 
