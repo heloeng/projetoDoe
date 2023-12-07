@@ -41,7 +41,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Exibindo a lista antes e depois de realizada a doação
 <h1>
-  <img src="img/doacao.png" alt="listas antes e depois da doação" width="600">
+  <img src="img/doacao.png" alt="listas antes e depois da doação" width="400">
 </h1>
 
 ## Testes unitários
