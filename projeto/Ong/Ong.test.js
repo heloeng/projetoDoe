@@ -2,6 +2,7 @@ const Ong = require("./Ong");
 const Doador = require("../Doador/Doador");
 const Familia = require("../Familia/Familia");
 const Item = require("../Item/Item");
+const ItemSolicitado = require("../Item/ItemSolicitado");
 
 describe("Testes da classe Ong", () => {
   test("Verificar se a ong está sendo instanciada", () => {
@@ -86,4 +87,18 @@ describe("Testes da classe Ong", () => {
     //verificação
     expect(familia.itensNecessarios).toEqual([{ nome: "Microondas" }]);
   });
+
+  test("Verificar se está excluindo o item da lista sem problemas", () =>{
+    //setup
+    const ong = new Ong();
+    const item1 = new ItemSolicitado("Geladeira");
+    const item2 = new ItemSolicitado("Fogão");
+    const item3 = new ItemSolicitado("Microondas");
+    //ação
+    ong.excluirDaListaDeItens(item1)
+
+    //verificação
+    expect(Item.listaItens).toEqual([{"nome": "Fogão","status": "Item Solicitado"}, {"nome": "Microondas", "status": "Item Solicitado"}])
+
+  })
 });
