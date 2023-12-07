@@ -24,7 +24,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Funcionalidades
-- Cadastrar Ong
+- Cadastrar ONG
 - Cadastrar doador
 - Cadastrar familia
 - Cadastrar item para disponibilizado para doação
