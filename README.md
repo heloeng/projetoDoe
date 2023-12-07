@@ -5,7 +5,9 @@ Resido em ,  etc.
 
 ## Jeanne
 [foto aqui]
-Moro em Porto Velho - Rondônia, sou mãe de um menino de 6 anos, no momento estudando para ingressar no mercado de trabalho como desenvolvedora. 
+Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. Meu passatempo preferido é assistir doramas e meu esporte é natação.
+No momento, estou estudando para me tornar uma desenvolvedora e realizar minha transição de carreira. 
+
 
 # Problema
 O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
@@ -16,8 +18,8 @@ Quem nunca teve uma coisa para doar e devido a nao encontrar alguem que precisa,
 A idéia do projeto é que uma organização sem fins lucrativos gerencie um cadastro de doadores e de familias que precisam de itens como eletrodomésticos, roupas, móveis etc.
 Cada doador pode incluir itens a sua lista de doações e a familia pode cadastrar itens que está precisando. Assim a organização fica responsável pela realização da doação dos itens.
 
-### Diagrama UML
-
+## Diagrama UML
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Funcionalidades
 - Cadastrar Ong
@@ -33,8 +35,10 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ### Exibindo a lista antes e depois de realizada a doação
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ### Testes unitários
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
 ### Aprendizados
