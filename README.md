@@ -5,7 +5,9 @@ Resido em ,  etc.
 
 ## Jeanne
 [foto aqui]
-Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. Meu passatempo preferido é assistir doramas e meu esporte é natação.
+Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. 
+Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. 
+Meu passatempo preferido é assistir doramas e meu esporte é natação.
 No momento, estou estudando para me tornar uma desenvolvedora e realizar minha transição de carreira. 
 
 
