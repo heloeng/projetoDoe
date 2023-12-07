@@ -1,4 +1,11 @@
 # Apresentação
+## Heloiza
+[foto aqui]
+Resido em ,  etc.
+
+## Jeanne
+[foto aqui]
+Moro em Porto Velho - Rondônia, sou mãe de um menino de 6 anos, no momento estudando para ingressar no mercado de trabalho como desenvolvedora. 
 
 # Problema
 O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
