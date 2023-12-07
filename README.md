@@ -19,14 +19,30 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 ### Diagrama UML
 
 
+## Funcionalidades
+- Cadastrar Ong
+- Cadastrar doador
+- Cadastrar familia
+- Cadastrar item para disponibilizado para doação
+- Cadastrar item que a família está precisando
+- Verificar na lista do doador se tem o item que a familia precisa e em caso positivo realizar a doação
+- Listar todos itens disponiveis para doação
+- Listar todos itens solicitados pelas famílias
 
 ### Função realizarDoacaoParaFamilia
-
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ### Exibindo a lista antes e depois de realizada a doação
 
 ### Testes unitários
 
+
+### Aprendizados
+
+O principal desafio do projeto foi determinar quais classes e suas dependências que seriam implementadas no projeto. 
+Depois, realizar a manipulação das listas, utilizando as funções find, filter e index. Com isso 
+conseguimos observar o comportamento das funções e aprendemos a utilizar cada uma delas dependendo da situação.
+Alem disso, conseguimos entender melhor o funcionamento da variável static e avaliamos sua utilização dentro do projeto.
 
 ### Implementações futuras
 
