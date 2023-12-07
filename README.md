@@ -6,7 +6,7 @@
 Resido em Poá - Sâo Paulo, sou formada em Engenharia de Computação e tenho experiência como desenvolvedora júnior fullstack.  Para me distrair gosto de praticar esportes: Bike, Natação, Trilhas, Rafting, Bungee Jump, Parapente, Asa Delta, Salto de Paraquedas enfim gosto principalmente dos radicais, pois me relaxam.
 
 ## Jeanne
-[foto aqui]
+<img src="img/jeanne.png" alt="Foto de Jeanne" width="100">
 Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. 
 Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. 
 Meu passatempo preferido é assistir doramas e meu esporte é natação.
@@ -43,7 +43,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 </h1>
 
 
-## Exibindo a lista antes e depois de realizada a doação
+## Exemplo de funcionamento 
 <h1>
   <img src="img/doacao.png" alt="listas antes e depois da doação" width="400">
 </h1>
@@ -55,7 +55,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Aprendizados
 
-O principal desafio do projeto foi determinar quais classes e suas dependências que seriam implementadas. 
+O principal desafio do projeto foi determinar quais as classes que seriam implementadas. 
 Depois, realizar a manipulação das listas, utilizando as funções find, filter e index. Com isso 
 conseguimos observar o comportamento das funções e aprendemos a utilizar cada uma delas dependendo da situação.
 Alem disso, conseguimos entender melhor o funcionamento da variável static e avaliamos sua utilização dentro do projeto.
