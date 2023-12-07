@@ -53,7 +53,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Aprendizados
 
-O principal desafio do projeto foi determinar quais classes e suas dependências que seriam implementadas. 
+O principal desafio do projeto foi determinar quais as classes que seriam implementadas. 
 Depois, realizar a manipulação das listas, utilizando as funções find, filter e index. Com isso 
 conseguimos observar o comportamento das funções e aprendemos a utilizar cada uma delas dependendo da situação.
 Alem disso, conseguimos entender melhor o funcionamento da variável static e avaliamos sua utilização dentro do projeto.
