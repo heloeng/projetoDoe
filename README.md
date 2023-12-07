@@ -33,29 +33,26 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 - Listar todos itens disponiveis para doação
 - Listar todos itens solicitados pelas famílias
 
-### Função realizarDoacaoParaFamilia
+## Função realizarDoacaoParaFamilia
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-### Exibindo a lista antes e depois de realizada a doação
+## Exibindo a lista antes e depois de realizada a doação
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ### Testes unitários
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
-### Aprendizados
+## Aprendizados
 
 O principal desafio do projeto foi determinar quais classes e suas dependências que seriam implementadas. 
 Depois, realizar a manipulação das listas, utilizando as funções find, filter e index. Com isso 
 conseguimos observar o comportamento das funções e aprendemos a utilizar cada uma delas dependendo da situação.
 Alem disso, conseguimos entender melhor o funcionamento da variável static e avaliamos sua utilização dentro do projeto.
 
-### Implementações futuras
+## Implementações futuras
 
 - Cadastro de membros nas familias
 - Listagem de todos os itens doados
 - Busca de todos os doadores e familias para verificação de itens disponíveis e familias que estão precisando
 
-
-* Esse projeto foi desenvolvido para o curso de Imersão JavaScrip da {Reprograma}
-* Alunas: Heloiza Souza Mendes e Jeanne Fernanda Mendes
