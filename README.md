@@ -13,7 +13,7 @@ No momento, estou estudando para me tornar uma desenvolvedora e realizar minha t
 
 # Problema
 O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
-Quem nunca teve uma coisa para doar e devido a nao encontrar alguem que precisa, jogou no lixo?
+Quem nunca teve uma coisa para doar e devido a não encontrar alguem que precisa, jogou no lixo?
 
 # Projeto Doe
 
