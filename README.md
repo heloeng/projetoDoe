@@ -4,7 +4,7 @@
 Resido em ,  etc.
 
 ## Jeanne
-[foto aqui]
+<img src="img/jeanne.png" alt="Foto de Jeanne" width="100">
 Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. 
 Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. 
 Meu passatempo preferido é assistir doramas e meu esporte é natação.
