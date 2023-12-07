@@ -1,7 +1,9 @@
 # Apresentação
 ## Heloiza
-[foto aqui]
-Resido em ,  etc.
+<h1>
+  <img src="img/heloiza.jpg" alt="Heloiza" width="600">
+</h1>
+Resido em Poá - Sâo Paulo, sou formada em Engenharia de Computação e tenho experiência como desenvolvedora júnior fullstack.  Para me distrair gosto de praticar esportes: Bike, Natação, Trilhas, Rafting, Bungee Jump, Parapente, Asa Delta, Salto de Paraquedas enfim gosto principalmente dos radicais, pois me relaxam.
 
 ## Jeanne
 [foto aqui]
