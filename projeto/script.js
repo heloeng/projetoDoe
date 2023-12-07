@@ -75,7 +75,6 @@ console.log(familia1);
 console.log(doador);
 
 console.log("Itens Solicitados:", Item.listarItensPorStatus("Item Solicitado"));
-//console.log("Itens Doados:", Item.listarItensPorStatus("ItemDoado"));
 console.log(
   "Itens Disponíveis para doação:",
   Item.listarItensPorStatus("Item Para Doação")

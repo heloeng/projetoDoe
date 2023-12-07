@@ -21,7 +21,9 @@ A idéia do projeto é que uma organização sem fins lucrativos gerencie um cad
 Cada doador pode incluir itens a sua lista de doações e a familia pode cadastrar itens que está precisando. Assim a organização fica responsável por intermediar a doação dos itens.
 
 ## Diagrama UML
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<h1>
+  <img src="img/UML.png" alt="Função realizar doação para familia" width="600">
+</h1>
 
 ## Funcionalidades
 - Cadastrar ONG
@@ -35,13 +37,13 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Função realizarDoacaoParaFamilia
 <h1>
-  <img src="IMG/realizarDOacaoParaFamilia.PNG" alt="Função realizar doação para familia" width="800">
+  <img src="img/realizarDoacaoParaFamilia.png" alt="Função realizar doação para familia" width="600">
 </h1>
 
 
 ## Exibindo a lista antes e depois de realizada a doação
 <h1>
-  <img src="IMG/doacao.PNG" alt="listas antes e depois da doação" width="800">
+  <img src="img/doacao.png" alt="listas antes e depois da doação" width="400">
 </h1>
 
 ## Testes unitários
