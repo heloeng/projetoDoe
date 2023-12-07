@@ -37,7 +37,7 @@ class Ong {
   realizarDoacaoParaFamilia(familia, doador) {
     familia.itensNecessarios = familia.itensNecessarios.filter(
       (itemNecessario) => {
-        const encontradoNaDoacao = this.procurarItensNaListaDeNecessidades(doador, itemNecessario);
+        const encontradoNaDoacao = this.procurarItemNaListaDeDoacao(doador, itemNecessario);
         if (encontradoNaDoacao) {
           this.excluirDaListaDeItensParaDoacao(familia, doador, itemNecessario);
           this.excluirDaListaDeItens(itemNecessario);
@@ -49,7 +49,7 @@ class Ong {
     );
   }
 
-  procurarItensNaListaDeNecessidades(doador, itemNecessario) {
+  procurarItemNaListaDeDoacao(doador, itemNecessario) {
     return doador.itensParaDoacao.find(
       (itemDoacao) => itemDoacao.nome === itemNecessario.nome
     );
