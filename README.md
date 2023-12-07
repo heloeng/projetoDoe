@@ -46,7 +46,7 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 
 ## Testes unitários
 <h1>
-  <img src="img/tests.png" alt="lista depois da daoação" width="800">
+  <img src="img/tests.png" alt="lista depois da daoação" width="400">
 </h1>
 
 ## Aprendizados
