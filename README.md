@@ -1,6 +1,8 @@
 # Apresentação
 
 # Problema
+O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
+Quem nunca teve uma coisa para doar e devido a nao encontrar alguem que precisa, jogou no lixo?
 
 # Projeto Doe
 
@@ -8,6 +10,7 @@ A idéia do projeto é que uma organização sem fins lucrativos gerencie um cad
 Cada doador pode incluir itens a sua lista de doações e a familia pode cadastrar itens que está precisando. Assim a organização fica responsável pela realização da doação dos itens.
 
 ### Diagrama UML
+
 
 ### Classes
 - Pessoa
