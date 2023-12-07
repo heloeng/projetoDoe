@@ -37,16 +37,9 @@ class Ong {
   realizarDoacaoParaFamilia(familia, doador) {
     familia.itensNecessarios = familia.itensNecessarios.filter(
       (itemNecessario) => {
-        const encontradoNaDoacao = doador.itensParaDoacao.find(
-          (itemDoacao) => itemDoacao.nome === itemNecessario.nome
-        );
+        const encontradoNaDoacao = this.procurarItensNaListaDeNecessidades(doador, itemNecessario);
         if (encontradoNaDoacao) {
-          console.log(
-            `${doador.nome} doou o item ${itemNecessario.nome} para ${familia.nome}`
-          );
-          doador.itensParaDoacao = doador.itensParaDoacao.filter(
-            (item) => item.nome !== itemNecessario.nome
-          );
+          this.excluirDaListaDeItensParaDoacao(familia, doador, itemNecessario);
           this.excluirDaListaDeItens(itemNecessario);
           return false;
         }
@@ -56,8 +49,23 @@ class Ong {
     );
   }
 
+  procurarItensNaListaDeNecessidades(doador, itemNecessario) {
+    return doador.itensParaDoacao.find(
+      (itemDoacao) => itemDoacao.nome === itemNecessario.nome
+    );
+  }
+
   excluirDaListaDeItens(itemNecessario) {
     Item.listaItens = Item.listaItens.filter(
+      (item) => item.nome !== itemNecessario.nome
+    );
+  }
+
+  excluirDaListaDeItensParaDoacao(familia, doador, itemNecessario) {
+    console.log(
+      `${doador.nome} doou o item ${itemNecessario.nome} para ${familia.nome}`
+    );
+    doador.itensParaDoacao = doador.itensParaDoacao.filter(
       (item) => item.nome !== itemNecessario.nome
     );
   }
