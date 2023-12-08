@@ -13,24 +13,15 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 </h1>
 
 ## Funcionalidades
-- Cadastrar ONG;
-- Cadastrar doador;
-- Cadastrar familia;
-- Cadastrar item para disponibilizado para doação;
-- Cadastrar item que a família está precisando;
-- Verificar na lista do doador se tem o item que a familia precisa e em caso positivo realizar a doação;
+- Cadastro de ONG, Família e Doador;
+- Cadastrar item para doação e que está necessitando
+- Verificar na lista do doador o item que a familia precisa e em caso positivo realizar a doação;
 - Listar todos itens disponiveis para doação;
 - Listar todos itens solicitados pelas famílias.
 
-## Função realizarDoacaoParaFamilia
+## Trecho de código
 <h1>
   <img src="img/realizarDoacaoParaFamilia.png" alt="Função realizar doação para familia" width="600">
-</h1>
-
-
-## Exemplo de funcionamento 
-<h1>
-  <img src="img/doacao.png" alt="listas antes e depois da doação" width="400">
 </h1>
 
 ## Testes unitários
@@ -38,18 +29,10 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
   <img src="img/tests.png" alt="lista depois da daoação" width="400">
 </h1>
 
-## Aprendizados
-
-O principal desafio do projeto foi determinar quais as classes que seriam implementadas. 
-Depois, realizar a manipulação das listas, utilizando as funções find, filter e index. Com isso 
-conseguimos observar o comportamento das funções e aprendemos a utilizar cada uma delas dependendo da situação.
-Alem disso, conseguimos entender melhor o funcionamento da variável static e avaliamos sua utilização dentro do projeto.
-
 ## Implementações futuras
 
 - Cadastro de membros nas familias
 - Listagem de todos os itens doados
-- Busca de todos os doadores e familias para verificação de itens disponíveis e familias que estão precisando
 
 ## Tecnologias Utilizadas
 - Node.js com npm
