@@ -14,7 +14,7 @@ A ideia do projeto é que uma organização sem fins lucrativos gerencie um cada
 ## Funcionalidades
 - Cadastro de ONG, Família e Doador;
 - Cadastrar item para doação e que está necessitando
-- Verificar na lista do doador o item que a familia precisa e em caso positivo realizar a doação;
+- Verificar na lista do doador o item que a família precisa e em caso positivo realizar a doação;
 - Listar todos itens disponiveis para doação;
 - Listar todos itens solicitados pelas famílias.
 
