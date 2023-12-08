@@ -53,5 +53,5 @@ Alem disso, conseguimos entender melhor o funcionamento da variável static e av
 
 ## Autoras
 
-- [@Heloiza Mendes](https://github.com/heloenge)
+- [@Heloiza Mendes](https://github.com/heloeng)
 - [@Jeanne Mendes](https://github.com/jeannefernanda)
