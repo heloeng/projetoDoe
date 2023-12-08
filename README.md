@@ -1,18 +1,3 @@
-# Apresentação
-## Heloiza
-<h1>
-  <img src="img/heloiza.jpg" alt="Heloiza" width="100">
-</h1>
-Resido em Poá - Sâo Paulo, sou formada em Engenharia de Computação e tenho experiência como desenvolvedora júnior fullstack.  Para me distrair gosto de praticar esportes: Bike, Natação, Trilhas, Rafting, Bungee Jump, Parapente, Asa Delta, Salto de Paraquedas enfim gosto principalmente dos radicais, pois me relaxam.
-
-## Jeanne
-<img src="img/jeanne.png" alt="Foto de Jeanne" width="100">
-Resido em Porto Velho - Rondônia, sou mãe de um menino de 6 anos. 
-Amo gatos, cachorros e hamsters. Tenho uma hamster Sírio chamada Tess. 
-Meu passatempo preferido é assistir doramas e meu esporte é natação.
-No momento, estou estudando para me tornar uma desenvolvedora e realizar minha transição de carreira. 
-
-
 # Problema
 O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
 Quem nunca teve uma coisa para doar e devido a não encontrar alguem que precisa, jogou no lixo?
@@ -66,3 +51,7 @@ Alem disso, conseguimos entender melhor o funcionamento da variável static e av
 - Listagem de todos os itens doados
 - Busca de todos os doadores e familias para verificação de itens disponíveis e familias que estão precisando
 
+## Autoras
+
+- [@Heloiza Mendes](https://github.com/heloenge)
+- [@Jeanne Mendes](https://github.com/jeannefernanda)
