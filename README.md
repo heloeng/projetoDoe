@@ -51,6 +51,10 @@ Alem disso, conseguimos entender melhor o funcionamento da variável static e av
 - Listagem de todos os itens doados
 - Busca de todos os doadores e familias para verificação de itens disponíveis e familias que estão precisando
 
+## Tecnologias Utilizadas
+- Node.js com npm
+- Jest
+
 ## Como rodar o projeto
 1. Clone este repositório: `git clone https://github.com/heloeng/projetoDoe.git`
 2. Navegue até o diretório do projeto: `cd projeto`
