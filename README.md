@@ -1,3 +1,10 @@
+## Como rodar o projeto
+1. Clone este repositório: `git clone https://github.com/heloeng/projetoDoe.git`
+2. Navegue até o diretório do projeto: `cd projeto`
+3. Instale as dependências: `npm install`.
+
+
+   
 # Problema
 O problema que buscamos resolver com a aplicação é a dificuldade que enfrentamos quando queremos doar algo a quem precisa ou quando precisamos de alguma coisa e não sabemos quem está doando.
 Quem nunca teve uma coisa para doar e devido a não encontrar alguem que precisa, jogou no lixo?
