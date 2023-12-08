@@ -13,14 +13,14 @@ Cada doador pode incluir itens a sua lista de doações e a familia pode cadastr
 </h1>
 
 ## Funcionalidades
-- Cadastrar ONG
-- Cadastrar doador
-- Cadastrar familia
-- Cadastrar item para disponibilizado para doação
-- Cadastrar item que a família está precisando
-- Verificar na lista do doador se tem o item que a familia precisa e em caso positivo realizar a doação
-- Listar todos itens disponiveis para doação
-- Listar todos itens solicitados pelas famílias
+- Cadastrar ONG;
+- Cadastrar doador;
+- Cadastrar familia;
+- Cadastrar item para disponibilizado para doação;
+- Cadastrar item que a família está precisando;
+- Verificar na lista do doador se tem o item que a familia precisa e em caso positivo realizar a doação;
+- Listar todos itens disponiveis para doação;
+- Listar todos itens solicitados pelas famílias.
 
 ## Função realizarDoacaoParaFamilia
 <h1>
