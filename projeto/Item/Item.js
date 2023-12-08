@@ -29,4 +29,4 @@ class Item {
 
 module.exports = Item;
 
-const Ong = require("../../projeto/Ong/Ong")
+// const Ong = require("../../projeto/Ong/Ong")
